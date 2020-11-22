@@ -12,13 +12,13 @@ class User:
     def save_user(self):
             User.user_list.append (self)
             
-    @classmethod
-    def user_exist(cls,user_name,password):
-        current_user =""
-        for user in User.user_list:
-            if user.user_name ==user_name and user.password ==password:
-                current_user =user.user_name
-                return current_user
+    # @classmethod
+    # def user_exist(cls,user_name,password):
+    #     current_user =""
+    #     for user in User.user_list:
+    #         if user.user_name ==user_name and user.password ==password:
+    #             current_user =user.user_name
+    #             return current_user
          
 class Credetials:
 
@@ -52,7 +52,7 @@ class Credetials:
     def display_credentials(cls):
         return cls.user_credetials
  
-    # def generate_password (self,stringfri=1):
-    #              password =string.ascii_uppercase + string.ascii_lowercase + string.digits + "(/|~!.@,)#{?&[%]^}&*"
-    #              return "".join(random.choice(password) for i in range(stringfri))
+    def generate_password (self,stringfri=1):
+                 password =string.ascii_uppercase + string.ascii_lowercase + string.digits + "(/|~!.@,)#{?&[%]^}&*"
+                 return "".join(random.choice(password) for i in range(stringfri))
                     
