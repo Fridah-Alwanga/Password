@@ -38,13 +38,13 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(len(Credentials.user_credentials),1)
 
 
-    # def find_credentials(self):
-    #     self.new_credentials.save_credentials()
-    #     test_credential = Credentials("acc_name","user_name","password")
-    #     test_credential.save_credentials() 
+    def find_credentials(self):
+        self.new_credentials.save_credentials()
+        test_credential = Credentials("acc_name","user_name","password")
+        test_credential.save_credentials() 
 
-    #     the_credential =Credentials.find_acc_name("acc_name")
-    #     self.assertEqual(the_credential.acc_name,test_credential.acc_name)
+        the_credential =Credentials.find_acc_name("acc_name")
+        self.assertEqual(the_credential.acc_name,test_credential.acc_name)
 
 
     def test_exist(self):
