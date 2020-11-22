@@ -1,45 +1,36 @@
-# Name 
-GITHUBSEARCH
-
+# Password
 # Author
 Fridah Alwanga
-
-# Description
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Technologies Used
-CSS<br>
-HTML<br>
-AngularCLI<br>
-BOOTSTRAP
-
-## Contact Information
-fridahalwanga6@gmail.com
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-## License
-MIT License:<br>
-Copyright ©[Fridah Alwanga] </br> 
+## Description
+This is a python app that enables users to users to store their passwords and also create new passwords. The application runs on the terminal and the user navigates through the app by using short codes.
+## Installation/Setup instruction
+The application requires this installations to operate:
+ * python3.9
+ * pip
+ ## Technologies Used 
+  * python3.9
+  * Markdown
+## Live link
+* https://github.com/Fridah-Alwanga/Password
+## To get to the Website use the following:
+* Download the folder from the github
+* https://github.com/Fridah-Alwanga/Password
+* You can even Download zip the folder if you have problems with clone..
+* cd Password
+* Open with code . or atom . depending on the text editor you are   using.
+## Functionality
+* To run test for this application
+        $ python3.9 user_test.py
+ * Open terminal and type the following commands
+        $ chmod +x Run.py
+        $./run.py      
+## User Stories
+As a user 
+* Log in
+* Generate a more secure passwords
+* Search for saved passwords
+* Delete passwords
+## Contact Information 
+If you have any question or contributions, please email me at [fridahalwanga6@gmail.com]
+### License
+  [MIT] Copyright (c) 2020 Fridah Alwanga
