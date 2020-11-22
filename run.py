@@ -65,7 +65,7 @@ def main():
                 while True:
                     print("use C to creat credential,DEL to delet credential,DS to display F to find credential")
                     credentials_input == input().lower()
-                    if credentials_input =="C":
+                    # if credentials_input =="C":
                         print("create credentials")
                         input(" enter acc_name:")
                         acc_name= input()
