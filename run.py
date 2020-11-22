@@ -20,8 +20,8 @@ def create_credentials(acc_name,username,password):
 def save_credentials(Credetials):
     Credetials.save_credentials()
 
-def delete_credentials(Credetials):
-    Credetials.delete_credentials()
+# def delete_credentials(Credetials):
+#     Credetials.delete_credentials()
 
 def display_credetials():
     return Credetials.display_credentials()
@@ -106,7 +106,7 @@ def main():
 
 
                     elif credentials_input =="F":
-                        print("enter account to find").
+                        print("enter account to find")
                         account = input("enter account name")
                         if find_acc_name(account):
                             account_name = find_acc_name(account)
