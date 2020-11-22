@@ -26,10 +26,10 @@ class TestCredentials(unittest.TestCase):
     def tearDown(self):
         Credentials.user_credentials =[]
 
-    def test_details(self):
-        self.assertEqual(self.new_credentials.acc_name,"facebook")
-        self.assertEqual(self.new_credentials.user_name,"fridah")
-        self.assertEqual(self.new_credentials.password,"1234567")
+    # def test_details(self):
+    #     self.assertEqual(self.new_credentials.acc_name,"facebook")
+    #     self.assertEqual(self.new_credentials.user_name,"fridah")
+    #     self.assertEqual(self.new_credentials.password,"1234567")
 
 
     def test_save_credentials(self):
