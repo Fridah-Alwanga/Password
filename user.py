@@ -20,14 +20,14 @@ class User:
                 current_user =user.user_name
                 return current_user
          
-# class Credetials:
+class Credetials:
 
-#     user_credetials =[]
+    user_credetials =[]
 
-#     def __init__(self,acc_name, user_name,password):
-#       self.acc_name =acc_name
-#       self.user_name =user_name
-#       self.password =password
+    def __init__(self,acc_name, user_name,password):
+      self.acc_name =acc_name
+      self.user_name =user_name
+      self.password =password
 
     def save_credetials(self):
             Credetials.user_credetials.append (self)
@@ -36,12 +36,12 @@ class User:
     def delete_credentials(self):
             Credetials.user_credetials.remove(self)
 
-    @classmethod
-    def credetialsuser_exist(cls,acc_name):
-        for credetial in cls.user_credetials:
-            if credetial.acc_name ==acc_name:
-                return True
-        return False
+    # @classmethod
+    # def credetialsuser_exist(cls,acc_name):
+    #     for credetial in cls.user_credetials:
+    #         if credetial.acc_name ==acc_name:
+    #             return True
+    #     return False
 
     @classmethod
     def find_acc_name(cls,acc_name):
