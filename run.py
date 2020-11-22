@@ -32,37 +32,37 @@ def Credetialsuser_exist(acc_name):
 def find_acc_name(acc_name):
     return Credetials.find_acc_name(acc_name) 
 
-# def generate_password ():
-#     generate_password =Credetials.generate_password()
-#     return generate_password 
+def generate_password ():
+    generate_password =Credetials.generate_password()
+    return generate_password 
 
-def main():
-    while True:
-        print('login to password locker,use this command to procced use cr to create account, SG to sign in and EX to exit')
-        choice = input().lower()
-        if choice =='cr':
-            print("create account")
-            username =input("enter username")
-            print('use p to create password,au to auto generate password,and e for exit')
-            password =input().lower()
-            if password == "p":
-                password = input("enter password")
-            elif password =="au":
-                    password=generate_password()
-            else:
-                print("incorrect")
-                save_user(create_user(username,password))
-                print(f"Welcome {username} your locker  password is {password}")
-        elif choice =='sg':
-            print("enter username and password to signin")
-            print("enter username:")
-            username = input()
-            print("enter password:")
-            password = input()
-            exist_user =signin(username,password)
-            if exist_user == username:
-                print(f"hie {username}")
-                while True:
+# def main():
+#     while True:
+#         print('login to password locker,use this command to procced use cr to create account, SG to sign in and EX to exit')
+#         choice = input().lower()
+#         if choice =='cr':
+#             print("create account")
+#             username =input("enter username")
+#             print('use p to create password,au to auto generate password,and e for exit')
+#             password =input().lower()
+#             if password == "p":
+#                 password = input("enter password")
+#             elif password =="au":
+#                     password=generate_password()
+#             else:
+#                 print("incorrect")
+#                 save_user(create_user(username,password))
+#                 print(f"Welcome {username} your locker  password is {password}")
+#         elif choice =='sg':
+#             print("enter username and password to signin")
+#             print("enter username:")
+#             username = input()
+#             print("enter password:")
+#             password = input()
+#             exist_user =signin(username,password)
+#             if exist_user == username:
+#                 print(f"hie {username}")
+#                 while True:
                     print("use C to creat credential,DEL to delet credential,DS to display F to find credential")
                     credentials_input == input().lower()
                     if credentials_input =="C":
