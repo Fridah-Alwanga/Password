@@ -36,21 +36,21 @@ class Credetials:
     def delete_credentials(self):
             Credetials.user_credetials.remove(self)
 
-    # @classmethod
-    # def credetialsuser_exist(cls,acc_name):
-    #     for credetial in cls.user_credetials:
-    #         if credetial.acc_name ==acc_name:
-    #             return True
-    #     return False
+    @classmethod
+    def credetialsuser_exist(cls,acc_name):
+        for credetial in cls.user_credetials:
+            if credetial.acc_name ==acc_name:
+                return True
+        return False
 
     @classmethod
     def find_acc_name(cls,acc_name):
         for credetial in cls.user_credetials:
             if credetial.acc_name ==acc_name:
                 return credetial
-    @classmethod
-    def display_credentials(cls):
-        return cls.user_credetials
+    # @classmethod
+    # def display_credentials(cls):
+    #     return cls.user_credetials
  
     def generate_password (self,stringfri=1):
                  password =string.ascii_uppercase + string.ascii_lowercase + string.digits + "(/|~!.@,)#{?&[%]^}&*"
