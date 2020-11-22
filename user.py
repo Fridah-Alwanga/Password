@@ -52,7 +52,7 @@ class Credetials:
     def display_credentials(cls):
         return cls.user_credetials
  
-    def generate_password (self,stringfri=1):
-                 password =string.ascii_uppercase + string.ascii_lowercase + string.digits + "(/|~!.@,)#{?&[%]^}&*"
-                 return "".join(random.choice(password) for i in range(stringfri))
+    # def generate_password (self,stringfri=1):
+    #              password =string.ascii_uppercase + string.ascii_lowercase + string.digits + "(/|~!.@,)#{?&[%]^}&*"
+    #              return "".join(random.choice(password) for i in range(stringfri))
                     
