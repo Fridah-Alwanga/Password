@@ -33,8 +33,8 @@ class Credetials:
             Credetials.user_credetials.append (self)
 
             
-    # def delete_credentials(self):
-    #         Credetials.user_credetials.remove(self)
+    def delete_credentials(self):
+            Credetials.user_credetials.remove(self)
 
     @classmethod
     def credetialsuser_exist(cls,acc_name):
