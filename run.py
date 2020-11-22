@@ -20,8 +20,8 @@ def create_credentials(acc_name,username,password):
 def save_credentials(Credetials):
     Credetials.save_credentials()
 
-# def delete_credentials(Credetials):
-#     Credetials.delete_credentials()
+def delete_credentials(Credetials):
+    Credetials.delete_credentials()
 
 def display_credetials():
     return Credetials.display_credentials()
@@ -32,9 +32,9 @@ def Credetialsuser_exist(acc_name):
 def find_acc_name(acc_name):
     return Credetials.find_acc_name(acc_name) 
 
-def generate_password ():
-    generate_password =Credetials.generate_password()
-    return generate_password 
+# def generate_password ():
+#     generate_password =Credetials.generate_password()
+#     return generate_password 
 
 def main():
     while True:
